@@ -28,41 +28,27 @@ By the end of this, students should be able to:
 ## Installation
 
 1.  `brew install pyenv`
-1.  Open `~/.bashrc` and add the following between Rbenv and Git configs:
-
-  ```bash
-  # Pyenv
-  export PYENV_ROOT=/usr/local/var/pyenv
-  eval "$(pyenv init -)"
-  ```
-
 1.  `pyenv install 3.5.1`
 1.  `pyenv global 3.5.1`
 1.  Python doesn't ship with the most up to date version of package manager
 pip, so upgrade pip : `pip install --upgrade pip`
 1.  `brew install pyenv-virtualenv`
-1.  Add the following to `~/.bashrc` under your additions from step 2:
+1.  Add the following to `~/.bashrc`:
 
     ```bash
+    eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
     ```
-
-### Atom Linter
-
-We'll be using [linter-pylint](https://atom.io/packages/linter-pylint).
-
-`pip install pylint`
-
-`apm install linter-pylint`
+1. Open a new terminal.
 
 ## Python REPL
 
 We'll be using Python's built-in REPL to practice what we learn today.
 
-Typing `python3` onto the command line will bring you into this REPL using Python version 3.5.1, similar to calling `node` to run the `node` REPL.
+Typing `python` onto the command line will bring you into this REPL, similar to calling `node` to run the `node` REPL.
 
 To run Python scripts, simply run
-`python3 <filename.rb>` from the command line. To run Python in version 2.7.0 or the original Python version install on your machine, simply call `python` without the extra 3.
+`python <filename.rb>` from the command line. To run Python in version 2.7.0 or the original Python version install on your machine, run `pyenv use 2.7.0` in your terminal.
 
 _Hint: to print to the console in Python, we use `print(<string to print>)`_
 
