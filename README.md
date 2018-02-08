@@ -254,7 +254,8 @@ conventionally used in Python to provide documentation throughout a codebase.
 Code will run fine without them, but that would stray from Python's conventions
 as well as throw you into linter message hell. Try them out!
 
-## Exercises
+## Exercises: Python Functions
+
 Write the following functions in your `lib/` directory:
 
 1. `mad_libs.py` – 
@@ -265,10 +266,10 @@ Write the following functions in your `lib/` directory:
 
 ```python
   mad_libs('Paul', 35, 'veterinarian', 'Denver, CO')
-  # should return 'Paul is 35 years old and works as a veterinarion in Denver, CO.'
+  # => 'Paul is 35 years old and works as a veterinarion in Denver, CO.'
 ```
 
-2. `meow.py` – 
+1. `meow.py` – 
   Input: `num`
   Output: sentence with 'meow' `num` times
 
@@ -276,10 +277,10 @@ Write the following functions in your `lib/` directory:
 
 ```python
   meow(4)
-  # should return 'meow meow meow meow'
+  # => 'meow meow meow meow'
 ```
 
-3. `countdown.py` – 
+1. `countdown.py` – 
   Input: `num`
   Output: blastoff countdown sentence starting from `num` and incrementing down
 
@@ -287,10 +288,10 @@ Write the following functions in your `lib/` directory:
 
 ```python
   countdown(7)
-  # should return '7! 6! 5! 4! 3! 2! 1! Blastoff!'
+  # => '7! 6! 5! 4! 3! 2! 1! Blastoff!'
 ```
 
-4. `division_message.py` – 
+1. `division_message.py` – 
   Input: `first_num`, `second_num`
   Output: sentence displaying answer and remainder
 
@@ -298,10 +299,10 @@ Write the following functions in your `lib/` directory:
 
 ```python
   division_message(7, 2)
-  # should return 'The answer is 3, with a remainder of 1'
+  # => 'The answer is 3, with a remainder of 1'
 ```
 
-5. `umbrella.py` – 
+1. `umbrella.py` – 
   Input: `currently_raining` (boolean), `storm_probability` (float number between 0 and 1)
   Output: True or False, depending on whether you should carry an umbrella (return True if `currently_raining` or storm probability is over 50%)
 
@@ -309,13 +310,13 @@ Write the following functions in your `lib/` directory:
 
 ```python
   umbrella(True, 0.1)
-  # should return True
+  # => True
 
   umbrella(False, 0.1)
-  # should return False
+  # => False
 
   umbrella(False, 0.67)
-  # should return True
+  # => True
 ```
 
 BONUS: Fill out `fizzbuzz.py` (requirements inside file).
@@ -457,6 +458,79 @@ divisible by 5 only should go into the `buzz` list, numbers divisible by both
 should go into the `fizzbuzz` list, and numbers divisible by neither should go
 into the "other" list. Finally, once you're done, print the resulting
 dictionary to check that your code works properly.
+
+## List Comprehensions
+
+Python supports a concept called "list comprehensions" to construct lists in a very easy and intuitive way.
+
+List comprehensions all follow the same format: 
+
+```
+[expression for item in list]
+```
+
+You can use list comprehensions with an expression like `x + 1` below:
+
+```python
+scores = [83, 72, 94, 87, 98]
+
+incremented_scores = [ x + 1 for x in scores]
+# => [84, 73, 95, 88, 99]
+```
+
+You can add conditionals at the end of a list comprehension to determine whether an element in a list should be returned in the resulting list: 
+
+```python
+my_nums = range(20)
+number_list = [ x for x in my_nums if x % 2 == 0]
+```
+
+You can also use list comprehensions with a function call like `increment(x)` below:
+
+```python
+scores = [83, 72, 94, 87, 98]
+
+def increment(score):
+  return score + 1
+
+incremented_scores = [ increment(x) for x in scores]
+```
+
+## Exercises: Python List Comprehension
+Write the following functions in your `lib/comprehensions/` directory:
+
+1. `percentages.py` – 
+  Input: `test_scores` list, `perfect_score`
+  Output: list of percentages
+
+  Example:
+
+```python
+  percentages([5, 10, 20, 30], 50)
+  # => [10, 20, 40, 60]
+```
+
+1. `passing_grades.py` –
+  Input: `test_scores` list, `perfect_score`
+  Output: list of grades 75% or above
+
+  Example:
+
+```python
+  percentages([75, 85, 65, 95, 50], 100)
+  # => [75, 85, 95]
+```
+
+1. `grades.py` –
+  Input: `test_scores` list, `perfect_score`
+  Output: list of grades ( < 60 - 'F'; < 70 - 'D'; < 80 - 'C'; < 90 - 'B'; <= 100 - 'A')
+
+  Example:
+
+```python
+  percentages([75, 85, 65, 95, 50], 100)
+  # => ['C', 'B', 'D', 'A', 'F']
+```
 
 ## Additional Resources
 
