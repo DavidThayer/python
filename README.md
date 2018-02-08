@@ -52,9 +52,9 @@ To run Python scripts, simply run
 
 _Hint: to print to the console in Python, we use `print(<string to print>)`_
 
-Let's practice this. Take a minute to look at [lib/fizzbuzz.py](lib/fizzbuzz.py),
-then run the `fizzbuzz` script from the command line using
-`python lib/fizzbuzz.py`.
+Let's practice this. Take a minute to look at [lib/test.py](lib/test.py),
+then run the `test` script from the command line using
+`python lib/test.py`.
 
 ## Core Syntax, Variables, and Operators
 
@@ -253,6 +253,72 @@ within each of our example functions. These are called `docstrings` and are
 conventionally used in Python to provide documentation throughout a codebase.
 Code will run fine without them, but that would stray from Python's conventions
 as well as throw you into linter message hell. Try them out!
+
+## Exercises
+Write the following functions in your `lib/` directory:
+
+1. `mad_libs.py` – 
+  Input: `name`, `age`, `job`, `city`, and `state`
+  Output: sentence with properly formatted arguments
+
+  Example:
+
+```python
+  mad_libs('Paul', 35, 'veterinarian', 'Denver, CO')
+  # should return 'Paul is 35 years old and works as a veterinarion in Denver, CO.'
+```
+
+2. `meow.py` – 
+  Input: `num`
+  Output: sentence with 'meow' `num` times
+
+  Example:
+
+```python
+  meow(4)
+  # should return 'meow meow meow meow'
+```
+
+3. `countdown.py` – 
+  Input: `num`
+  Output: blastoff countdown sentence starting from `num` and incrementing down
+
+  Example:
+
+```python
+  countdown(7)
+  # should return '7! 6! 5! 4! 3! 2! 1! Blastoff!'
+```
+
+4. `division_message.py` – 
+  Input: `first_num`, `second_num`
+  Output: sentence displaying answer and remainder
+
+  Example:
+
+```python
+  division_message(7, 2)
+  # should return 'The answer is 3, with a remainder of 1'
+```
+
+5. `umbrella.py` – 
+  Input: `currently_raining` (boolean), `storm_probability` (float number between 0 and 1)
+  Output: True or False, depending on whether you should carry an umbrella (return True if `currently_raining` or storm probability is over 50%)
+
+  Example:
+
+```python
+  umbrella(True, 0.1)
+  # should return True
+
+  umbrella(False, 0.1)
+  # should return False
+
+  umbrella(False, 0.67)
+  # should return True
+```
+
+BONUS: Fill out `fizzbuzz.py` (requirements inside file).
 
 ## Lab: Build a Calculator
 
