@@ -116,7 +116,7 @@ The falsy values of Python are:
 
 #### Brief Aside: Double Slash (`//`) Operator
 
-Integer division will always return a whole integer.  Division with Floats returns most accurate results.
+Python has two division operators, a single slash character for classic division and a double-slash for “floor” division. Classic division means that the result will be true division (i.e. can be a float), whereas floor division means the answer will always be rounded down to the nearest whole number.
 
 In Python, this whole integer division behavior can be mirrored with the `//`
 operator.
