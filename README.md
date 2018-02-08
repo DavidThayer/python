@@ -112,7 +112,7 @@ The falsy values of Python are:
 |:---------------------|:------------------------------------:|:---------------------------:|
 | logical operators    | `&&`, <code>&#124;&#124;</code>, `!` | `and`, `or`, `not`          |
 | relational operators | `==` `!=` `>` `<` `>=` `<=`          | `==` `!=` `>` `<` `>=` `<=` |
-| arithmetic operators | `+`, `-`, `*`, `/` `//`, `%`         | `+`, `-`, `*`, `/`, `%`     |
+| arithmetic operators | `+`, `-`, `*`, `/`, `%`         | `+`, `-`, `*`, `/`, `//`, `%`     |
 
 #### Brief Aside: Double Slash (`//`) Operator
 
