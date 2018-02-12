@@ -273,7 +273,7 @@ Write the following functions in your `lib/` directory:
   # => 'Paul is 35 years old and works as a veterinarion in Denver, CO.'
 ```
 
-1. `meow.py` – 
+2. `meow.py` – 
   Input: `num`
   Output: sentence with 'meow' `num` times
 
@@ -281,13 +281,14 @@ Write the following functions in your `lib/` directory:
 
 ```python
   meow(4)
-  # => 'meow 
-  meow 
-  meow 
-  meow'
+  # => 
+  # 'meow' 
+  # 'meow' 
+  # 'meow' 
+  # 'meow'
 ```
 
-1. `countdown.py` – 
+3. `countdown.py` – 
   Input: `num`
   Output: blastoff countdown sentence starting from `num` and incrementing down
 
@@ -295,17 +296,17 @@ Write the following functions in your `lib/` directory:
 
 ```python
   countdown(7)
-  # => '7! 
-  6! 
-  5! 
-  4! 
-  3! 
-  2! 
-  1! 
-  Blastoff!'
+  # => '7!'
+  # '6!' 
+  # '5!' 
+  # '4!' 
+  # '3!' 
+  # '2!' 
+  # '1!' 
+  # 'Blastoff!'
 ```
 
-1. `division_message.py` – 
+4. `division_message.py` – 
   Input: `first_num`, `second_num`
   Output: sentence displaying answer and remainder
 
@@ -316,7 +317,7 @@ Write the following functions in your `lib/` directory:
   # => 'The answer is 3, with a remainder of 1'
 ```
 
-1. `umbrella.py` – 
+5. `umbrella.py` – 
   Input: `currently_raining` (boolean), `storm_probability` (float number between 0 and 1)
   Output: True or False, depending on whether you should carry an umbrella (return True if `currently_raining` or storm probability is over 50%)
 
@@ -495,8 +496,9 @@ incremented_scores = [ x + 1 for x in scores]
 You can add conditionals at the end of a list comprehension to determine whether an element in a list should be returned in the resulting list: 
 
 ```python
-my_nums = range(20)
+my_nums = range(20) # range from 0 ~ 19
 number_list = [ x for x in my_nums if x % 2 == 0]
+# => [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 
 You can also use list comprehensions with a function call like `increment(x)` below:
@@ -508,6 +510,7 @@ def increment(score):
   return score + 1
 
 incremented_scores = [ increment(x) for x in scores]
+# => [84, 73, 95, 88, 99]
 ```
 
 ## Exercises: Python List Comprehension
@@ -524,25 +527,25 @@ Write the following functions in your `lib/comprehensions/` directory:
   # => [10, 20, 40, 60]
 ```
 
-1. `passing_grades.py` –
+2. `passing_grades.py` –
   Input: `test_scores` list, `perfect_score`
   Output: list of grades 75% or above
 
   Example:
 
 ```python
-  percentages([75, 85, 65, 95, 50], 100)
+  passing_grades([75, 85, 65, 95, 50], 100)
   # => [75, 85, 95]
 ```
 
-1. `grades.py` –
+3. `grades.py` –
   Input: `test_scores` list, `perfect_score`
   Output: list of grades ( < 60 - 'F'; < 70 - 'D'; < 80 - 'C'; < 90 - 'B'; <= 100 - 'A')
 
   Example:
 
 ```python
-  percentages([75, 85, 65, 95, 50], 100)
+  grades([75, 85, 65, 95, 50], 100)
   # => ['C', 'B', 'D', 'A', 'F']
 ```
 
