@@ -265,7 +265,7 @@ Write the following functions in your `lib/` directory:
   Example:
 
 ```python
-  mad_libs('Paul', 35, 'veterinarian', 'Denver, CO')
+  mad_libs('Paul', 35, 'veterinarian', 'Denver', 'CO')
   # => 'Paul is 35 years old and works as a veterinarion in Denver, CO.'
 ```
 
