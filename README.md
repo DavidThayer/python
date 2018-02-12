@@ -67,7 +67,7 @@ The default variable syntax uses snake case; as in `keep_your_variables_defined_
 There is a lack of semicolons in Python. Line breaks in your
 code are enough to denote the end of an expression.
 
-However, as you may have noticed from our `fizzbuzz` script, we are introduced
+However, as you may have noticed from our `test` script, we are introduced
 to **colons** `:` throughout our code. Colons always come directly after the
 first line of the block statement. Colons are also immediately followed by a
 new, indented line (this indentation is purposeful **whitespace**).
