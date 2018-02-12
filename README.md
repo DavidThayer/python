@@ -277,7 +277,10 @@ Write the following functions in your `lib/` directory:
 
 ```python
   meow(4)
-  # => 'meow meow meow meow'
+  # => 'meow 
+  meow 
+  meow 
+  meow'
 ```
 
 1. `countdown.py` – 
@@ -288,7 +291,14 @@ Write the following functions in your `lib/` directory:
 
 ```python
   countdown(7)
-  # => '7! 6! 5! 4! 3! 2! 1! Blastoff!'
+  # => '7! 
+  6! 
+  5! 
+  4! 
+  3! 
+  2! 
+  1! 
+  Blastoff!'
 ```
 
 1. `division_message.py` – 
