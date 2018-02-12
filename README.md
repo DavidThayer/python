@@ -30,16 +30,20 @@ By the end of this, students should be able to:
 1.  `brew install pyenv`
 1.  `pyenv install 3.5.1`
 1.  `pyenv global 3.5.1`
-1.  Python doesn't ship with the most up to date version of package manager
-pip, so upgrade pip : `pip install --upgrade pip`
-1.  `brew install pyenv-virtualenv`
-1.  Add the following to `~/.bashrc`:
+1.  Add the following to `~/.bash_profile`:
 
     ```bash
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
     ```
 1. Open a new terminal.
+1.  Python doesn't ship with the most up to date version of package manager
+pip, so upgrade pip : `pip install --upgrade pip`
+1.  `brew install pyenv-virtualenv`
+1. Add one more line to `~/.bash_profile`:
+    ```bash
+    eval "$(pyenv virtualenv-init -)"
+    ```
+1. Open one more new terminal.
 
 ## Python REPL
 
